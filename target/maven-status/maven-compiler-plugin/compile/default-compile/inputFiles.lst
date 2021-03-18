@@ -1,0 +1,13 @@
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\dao\TicketDAO.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\service\FareCalculatorService.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\constants\Fare.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\dao\ParkingSpotDAO.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\service\ParkingService.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\model\ParkingSpot.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\config\DataBaseConfig.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\constants\DBConstants.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\service\InteractiveShell.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\constants\ParkingType.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\util\InputReaderUtil.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\App.java
+D:\_FORMATION_Salesforce\P5_LAURENS_Jeremy\P5_LAURENS_JEREMY\src\main\java\com\parkit\parkingsystem\model\Ticket.java

@@ -86,4 +86,26 @@ public class TicketDAO {
         }
         return false;
     }
+
+    public boolean regularCustomer(String myNumber){
+        Connection con = null;
+        try {
+            con = dataBaseConfig.getConnection();
+            PreparedStatement ps = con.prepareStatement(DBConstants.GET_EXISTING_CAR);
+            ps.setString(1, myNumber );
+            ResultSet rs = ps.executeQuery();
+            dataBaseConfig.closePreparedStatement(ps);
+            if(rs == null){
+                return false;
+            }else{
+                return true;
+            }
+        }catch (Exception ex){
+            logger.error("Error updating parking info",ex);
+            return false;
+        }finally {
+            dataBaseConfig.closeConnection(con);
+        }
+    }
+
 }

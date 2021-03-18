@@ -4,6 +4,7 @@ import com.parkit.parkingsystem.config.DataBaseConfig;
 import com.parkit.parkingsystem.constants.DBConstants;
 import com.parkit.parkingsystem.constants.ParkingType;
 import com.parkit.parkingsystem.model.ParkingSpot;
+import com.parkit.parkingsystem.model.Ticket;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,7 +12,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class ParkingSpotDAO {
+public class    ParkingSpotDAO {
     private static final Logger logger = LogManager.getLogger("ParkingSpotDAO");
 
     public DataBaseConfig dataBaseConfig = new DataBaseConfig();
@@ -55,5 +56,30 @@ public class ParkingSpotDAO {
             dataBaseConfig.closeConnection(con);
         }
     }
+
+    public boolean spotAlreadyTaken(ParkingSpot myParkinSpot){
+        Connection con = null;
+        try {
+            con = dataBaseConfig.getConnection();
+            PreparedStatement ps = con.prepareStatement(DBConstants.CHECK_PARKING_SPOT);
+            ps.setInt(1, myParkinSpot.getId());
+            ResultSet rs = ps.executeQuery();
+            dataBaseConfig.closePreparedStatement(ps);
+            if(rs == null){
+                return false;
+            }else{
+                return true;
+            }
+        }catch (Exception ex){
+            logger.error("Error updating parking info",ex);
+            return false;
+        }finally {
+            dataBaseConfig.closeConnection(con);
+        }
+    }
+
+
+
+
 
 }
